@@ -16,7 +16,7 @@ class VHT_VHPATIENTListView extends VHT_VHPATIENT{
 		//$where = ' 1 = 1 ';
 		//return $ert =  parent::create_new_list_query($order_by, $where, $filter, $params, $show_deleted, $join_type, $return_array, $parentbean, $singleSelect);
 		//$GLOBALS['log']->fatal($ert);
-		$ret_array['select'] =  'SELECT  VHT_VHPATIENT.id id, VHT_VHPATIENT.name name, VHT_VHPATIENT.description  excellecy, VHT_VHPATIENT.description newtestfield_c ';
+		$ret_array['select'] =  'SELECT  VHT_VHPATIENT.id id, VHT_VHPATIENT.name name, VHT_VHPATIENT.description  excellecy, VHT_VHPATIENT.description testfield, VHT_VHPATIENT.description assigned_user_name ';
 		$ret_array['from'] = ' FROM VHT_VHPATIENT ';
         $ret_array['where'] = ' WHERE 1 = 1';
 		$ret_Array['order_by'] = ' ORDER BY VHT_VHPATIENT.name DESC ';

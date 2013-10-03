@@ -15,15 +15,15 @@ class VHT_VHPATIENTViewList extends ViewList {
 		if(!$this->headers)
 		return;
 		if(empty($_REQUEST['search_form_only']) || $_REQUEST['search_form_only'] == false){ */
-		    //$this->params['custom_where'] = '  VHT_VHPATIENT.NAME <> "PAT2" ';
+		    //$this->params['custom_where'] = '  AND VHT_VHPATIENT.NAME <> "PAT8" ORDER BY VHT_VHPATIENT.NAME DESC';
 
 			//$this->lv->setup($this->seed, 'custom/modules/VHT_VHPATIENT/tpls/ListViewVHT_VHPATIENT.tpl', $this->where, $this->params);
-			
+			//$this->lv->setup($this->seed, 'include/ListView/ListViewGeneric.tpl', $this->where, $this->params);
 			//var_dump ($this->where);
 			
 			//var_dump($_REQUEST);
 			
-			//$this->params['orderBy'] = 'VHT_VHPATIENT.NAME DESC';
+			//$this->params['orderBy'] = 'VHT_VHPATIENT.NAME ASC';
 			//var_dump( $this->params);
 			//$savedSearchName = empty($_REQUEST['saved_search_select_name']) ? '' : (' - ' . $_REQUEST['saved_search_select_name']);
 			//echo get_form_header($GLOBALS['mod_strings']['LBL_LIST_FORM_TITLE'] . $savedSearchName, '', false);

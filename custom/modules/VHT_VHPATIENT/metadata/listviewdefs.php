@@ -28,9 +28,8 @@ array (
   ),
   'TESTFIELD' =>  
   array ( 
-   
-      'link' => true, 
-    'type' => 'encrypt', 
+
+    'type' => 'varchar', 
     'default' => true, 
     'label' => 'testfield', 
     'sortable' => false, 
